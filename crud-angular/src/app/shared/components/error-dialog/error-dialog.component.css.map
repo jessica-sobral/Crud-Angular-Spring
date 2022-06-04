@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "error-dialog.component.scss"
+    ],
+    "names": [],
+    "file": "error-dialog.component.css"
+}
