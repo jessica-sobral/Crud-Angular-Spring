@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
-
-import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { AppMaterialModule } from './app-material/app-material.module';
+import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { CategoryPipe } from './pipes/category.pipe';
 
 @NgModule({
@@ -13,8 +15,10 @@ import { CategoryPipe } from './pipes/category.pipe';
   ],
   imports: [
     CommonModule,
+    AppMaterialModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule
   ],
   exports: [
     ErrorDialogComponent,
