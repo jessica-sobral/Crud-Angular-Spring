@@ -27,7 +27,7 @@ public class CourseController {
     @ResponseStatus(code = HttpStatus.CREATED)
     public Course create(@RequestBody Course course) {
 //        System.out.println(course.getName());
-        
+
         return courseRepository.save(course);
 
 //        return ResponseEntity.status(HttpStatus.CREATED)
